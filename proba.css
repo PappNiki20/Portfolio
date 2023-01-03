@@ -1,0 +1,115 @@
+h1{
+    padding-top: 50px;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5em;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2{
+    text-align: left;
+    font-size: 1.875em;
+    margin-bottom: 10px;
+}
+p{
+    text-align: left;
+    font-size: 1.25em;
+    padding: 40px;
+}
+body{
+    background-image: url(kepek/hatter8.jpg);
+    background-repeat: no-repeat;
+   background-size:auto;
+    width: 100%;
+    max-height: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-family: Monospace		;
+}
+main{
+    background-color: rgb(3, 60, 98);
+    
+   color: aliceblue;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    border-radius: 30px;
+    padding-bottom: 100px ;
+    
+    
+}
+#web{
+    text-align: left;
+    margin-left: 20px;
+
+    
+}
+
+#java{
+    text-align: left;
+    margin-left: 20px;
+}
+#python{
+    text-align: left;
+    margin-left: 20px;
+}
+#halo{
+    text-align: left;
+    margin-left: 20px;
+}
+
+
+h3 {
+    display: block;
+    font-size: 1.875em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.web a:hover {
+    filter: grayscale(100%);
+}
+div a {
+    text-decoration: none;
+}
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.web img {
+    padding: 10px;
+    border-radius: 30px;
+}
+user agent stylesheet
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+#web {
+    text-align: center;
+}
+ header{
+    background-image: url(kepek/header4.jpg);
+    height: 150px;
+    color: rgb(251, 7, 145);
+    font-weight: bold;
+
+    
+ }
+p>span{
+   
+    
+    margin-top: 20px;
+   
+    
+    color: rgb(251, 7, 145);
+    
+ }

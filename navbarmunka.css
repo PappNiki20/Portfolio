@@ -1,5 +1,5 @@
 .dropdown{
-    background-color:  #112b4e;
+    background-color:  #1152a7;
     overflow: hidden;
    
     border-right: solid 1px   #010a15;
@@ -46,7 +46,7 @@
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #112b4e;
+    background-color: #235495;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
