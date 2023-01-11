@@ -28,9 +28,9 @@
       <div class="dropdown" style="float:left;">
         <button class="dropbtn">Magamról</button>
         <div class="dropdown-content">
-          <a href="#">Rólam</a>
-          <a href="#">Hobbim</a>
-          <a href="#">Zene, könyv</a>
+          <a href="magamrol.html#rolam">Rólam</a>
+          <a href="magamrol.html#hobbi">Hobbim</a>
+          <a href="magamrol.html#konyv">Zene, könyv</a>
         </div>
       </div>
     </a>
@@ -45,15 +45,9 @@
       </div>
       </a>
 
-      <a href="#">
-      <div class="dropdown" style="float:left;">
-        <button class="dropbtn">Céljaim</button>
-        <div class="dropdown-content">
-        </div>
-      </div>
-      </a>
+      
 
-      <a href="#">
+      <a href="utazasaim.html">
       <div class="dropdown" style="float:left;">
         <button class="dropbtn">Utazásaim</button>
         <div class="dropdown-content">
@@ -65,7 +59,28 @@
       </a>
     </nav>
     <main>
-       
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
         <header> </header>
         
         <article>

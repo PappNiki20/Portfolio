@@ -28,9 +28,9 @@
       <div class="dropdown" style="float:left;">
         <button class="dropbtn">Magamról</button>
         <div class="dropdown-content">
-          <a href="#">Rólam</a>
-          <a href="#">Hobbim</a>
-          <a href="#">Zene, könyv</a>
+          <a href="magamrol.html#rolam">Rólam</a>
+          <a href="magamrol.html#hobbi">Hobbim</a>
+          <a href="magamrol.html#konyv">Zene, könyv</a>
         </div>
       </div>
     </a>
@@ -45,15 +45,9 @@
       </div>
       </a>
 
-      <a href="#">
-      <div class="dropdown" style="float:left;">
-        <button class="dropbtn">Céljaim</button>
-        <div class="dropdown-content">
-        </div>
-      </div>
-      </a>
+     
 
-      <a href="#">
+      <a href="utazasaim.html">
       <div class="dropdown" style="float:left;">
         <button class="dropbtn">Utazásaim</button>
         <div class="dropdown-content">
@@ -65,12 +59,36 @@
       </a>
     </nav>
     <main>
-       
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+        
+      
         <header> </header>
         
         <article>
             <h1 style="font-size:5vw;">Magamról</h1>
             <div class="alahuzas">
+              <a name="rolam"></a>
             <h2 class="cim" style="  font-size: 3.0vh
               ">Rólam</h2>
             <p>20 éves vagyok, Esztergomban élek.Nagyon szeretek olvasni, utazni. Vidám személyiség vagyok, könnyen barátkozok, nyitott vagyok az új dolgokra.
@@ -90,6 +108,7 @@
             </p>
           </div>
           <div class="alahuzas">
+            <a name="hobbi"></a>
             <h2 class="cim" style="  font-size: 3.0vh
               ">Hobbim</h2>
             <p>Nagyon szeretek utazni, elég sok helyen jártam már. A kép galériát az Utazásaim fül alatt találjátok :).
@@ -97,10 +116,13 @@
                 A hidegebb időkben pedig mindig olvasok.
             </p></div>
             <div class="alahuzas">
+              <a name="konyv"></a>
                 <h2 class="cim" style="  font-size: 3.0vh
                 ">Zene, könyv</h2>
               <p>
-                <span>Kedvenc könyveim:</span>
+                <h2 class="cim" style="  font-size: 3.0vh
+                ">Kedvenc könyveim:</h2>
+                <div class="tabla" style=" overflow-x: auto;">
                 <table>
                     <tr>
                         <th>Cím</th>
@@ -115,9 +137,26 @@
                     <tr>
                         <td>Tog</td>
                         <td>Sarah J. Maas</td>
-                        <td><img src="kepek/tog.jfif" alt="acotar"></td>
+                        <td><img src="kepek/tog.jfif" alt="tog"></td>
                     </tr>
-                </table>
+                    <tr>
+                      <td>Crescent City</td>
+                      <td>Sarah J. Maas</td>
+                      <td><img src="kepek/crescent.jfif" alt="crescent"></td>
+                  </tr>
+                </table></div>
+
+                <br>
+                <br>
+                <h2 class="cim" style="  font-size: 3.0vh
+                ">Kedvenc zeném:</h2>
+                <br>
+                <video width="400" controls>
+                  <source src="kepek/zene.mp4" type="video/mp4">
+                  <source src="kepek/zene.ogg" type="video/ogg">
+                  Your browser does not support HTML video.
+                </video>
+                
               </p> 
             </div>
         </article>

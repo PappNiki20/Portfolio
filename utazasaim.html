@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Önbemutató weboldal, portfólió">
+  <meta name="keywords" content="Saját munkáim, magamról, céljaim">
+  <meta name="author" content="Papp Nikoletta">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papp Nikoletta</title>
+    <link rel="stylesheet" href="utazas.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="magamnavbar.css">
+    <title>Papp Nikoletta</title>
+    <style>
+        .mySlides {display:none;}
+        </style>
+</head>
+<body>
+    <nav>
+
+      <a href="index.html">
+      <div class="dropdown" style="float:left;">
+        <button class="dropbtn">Kezdőlap</button>
+        <div class="dropdown-content">
+        </div>
+      </div>
+
+    </a>
+    <a href="magamrol.html">
+      <div class="dropdown" style="float:left;">
+        <button class="dropbtn">Magamról</button>
+        <div class="dropdown-content">
+          <a href="magamrol.html#rolam">Rólam</a>
+          <a href="magamrol.html#hobbi">Hobbim</a>
+          <a href="magamrol.html#konyv">Zene, könyv</a>
+        </div>
+      </div>
+    </a>
+
+      <a href="munkaim.html">
+      <div class="dropdown" style="float:left;">
+        <button class="dropbtn">Munkáim</button>
+        <div class="dropdown-content">
+          <a href="munkaim.html#web">Web</a>
+          <a href="munkaim.html#java">Java</a>
+        </div>
+      </div>
+      </a>
+
+     
+
+      <a href="utazasaim.html">
+      <div class="dropdown" style="float:left;">
+        <button class="dropbtn">Utazásaim</button>
+        <div class="dropdown-content">
+          <a href="#">Hollandia</a>
+          <a href="#">Görögország</a>
+          <a href="#">Horvátország</a>
+        </div>
+      </div>
+      </a>
+    </nav>
+    <main>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <script>
+          // Get the button
+          let mybutton = document.getElementById("myBtn");
+          
+          // When the user scrolls down 20px from the top of the document, show the button
+          window.onscroll = function() {scrollFunction()};
+          
+          function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+            } else {
+              mybutton.style.display = "none";
+            }
+          }
+          
+          // When the user clicks on the button, scroll to the top of the document
+          function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          }
+          </script>
+          
+        
+          <header> </header>
+          
+          <article>
+             
+                  <a name="hollandia"></a>
+                  <h2 class="cim" style="  font-size: 3.0vh
+                  ">Hollandia</h2><div class="w3-content w3-display-container">
+
+<div class="w3-display-container mySlides">
+  <img src="kepek/hollandia/fokep.jpg" style="width:100%">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+   Amszterdam
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="kepek/hollandia/repulo.jpg" style="width:100%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+   A repülőn
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="kepek/hollandia/kaloz.jpg" style="width:100%">
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    Walibi
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="kepek/hollandia/auto.jpg" style="width:100%">
+  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+Füves autó  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="kepek/hollandia/csoportkep.jpg" style="width:100%">
+  <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+    A csapat
+  </div>
+</div>
+<div class="w3-display-container mySlides">
+    <img src="kepek/hollandia/templom.jpg" style="width:100%">
+    <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+     Még egy templom
+    </div>
+  </div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    </script>
+    <aside>
+        <p>Hollandia az az ország ahol a legtöbbet jártam, és ahol egyszer élni is szeretnék. Nagyon szeretem a hollandokat, kedvesek és barátságosak.
+<br> Mellesleg az ország is gyönyörű.
+        </p>
+
+    </aside>
+        </article>
+      
+    </main>
+    
+</body>
+</html>
